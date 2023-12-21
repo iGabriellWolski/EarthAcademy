@@ -1,57 +1,18 @@
-:root{
-    --FonteDestaque:'Swanky and Moo Moo', cursive;
-}
-
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    /* overflow-x: hidden; */
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: .5rem 1.75rem;
-    height: 5rem;
-    /* background-color: red; */
-}
-
-.container_logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    gap: .2rem;
-    /* background-color: red; */
-}
-
-.container_logo a img {
-    height: 80px;
-    width: 80px;
-    filter: drop-shadow(1px 1px 2px);
-    
-}
-
-.container_logo h1 {
-    font-size: 1.5rem;
-    font-family: var(--FonteDestaque)
-}
 
 .intro {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
     gap: 4rem;
     padding: 2rem;
     background-image: url(../imagens/QuadroNegro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
+    max-width: 1980px;
+    margin: 0 auto;
 }
 
 .texto_institucional_01,
@@ -88,6 +49,8 @@
     padding: 1rem;
     border-radius: 4px;
 }
+
+/* MediaQuery */
 
 @media screen and (min-width:900px) {
     .intro {
@@ -129,7 +92,5 @@
         right: 0;
         height: 90%;
     }
-
-
-
 }
+

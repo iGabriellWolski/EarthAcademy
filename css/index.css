@@ -1,0 +1,23 @@
+@import url(header.css);
+@import url(intro.css);
+@import url(institucional.css);
+
+
+:root {
+    --FonteDestaque: 'Swanky and Moo Moo', cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+    /* overflow-x: hidden; */
+}
+
+section {
+    padding: 2rem;
+}
+
+
