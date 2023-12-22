@@ -7,13 +7,13 @@
     position: relative;
 }
 
-.estrutura::after{
+.estrutura::after {
     content: "";
     border-bottom: 1px solid gray;
     position: absolute;
     bottom: 0px;
     left: 10%;
-    width: 80%;  
+    width: 80%;
 }
 
 
@@ -48,15 +48,19 @@
 }
 
 ::-webkit-scrollbar {
-    background-color: gainsboro;
     width: 6px;
     border-radius: 4px;
+}
+
+.container_sumary_estrutura::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, .4);
+    border-radius: 8px;
 }
 
 
 .estrutura summary {
     width: 100%;
-    background-color: #DDA15E;
+    background-color: rgb(248, 179, 31);
     padding: .75rem;
     border-radius: 4px;
     margin-bottom: 1.5rem;

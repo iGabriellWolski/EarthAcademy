@@ -82,8 +82,6 @@
         display: block;
         grid-column: 5/9;
         grid-row: 1/9;
-        background-color: royalblue;
-        /* position: relative; */
     }
 
     .container_intro_img img {
