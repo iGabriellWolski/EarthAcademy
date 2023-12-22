@@ -4,14 +4,22 @@
     align-items: start;
     justify-content: space-between;
     row-gap: 2rem;
-
+    position: relative;
 }
 
-.estrutura::before {
+.estrutura::after{
     content: "";
-    border: 1px solid black;
-    width: 100%;
-    margin-bottom: 1.5rem;
+    border-bottom: 1px solid gray;
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    width: 80%;  
+}
+
+
+
+.estrutura .container_subTittle_estrutura h2 {
+    background-color: transparent;
 }
 
 .container_video_estrutura {
@@ -57,6 +65,10 @@
 
 .estrutura details p {
     margin: 1rem 0rem;
+    padding: 1rem 1.25rem;
+    background-color: rgba(128, 128, 128, .2);
+    border-radius: 4px;
+
 }
 
 @media screen and (min-width: 650px) {

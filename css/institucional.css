@@ -6,9 +6,20 @@
     max-width: 1200px;
 }
 
+.institucional h1{
+    background-color: #DDA15E;
+    padding: .5rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.institucional h2{
+    background-color: transparent;
+}
+
 .container_subTittle_institucional {
     font-size: .85rem;
-    margin: 1rem 0rem
+    margin: 1rem 0rem;
 }
 
 .institucional p {
