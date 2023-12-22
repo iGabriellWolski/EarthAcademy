@@ -1,0 +1,109 @@
+.diciplinas {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+}
+
+.container_content_diciplinas {
+    margin-bottom: 1.75rem;
+}
+
+.diciplinas h2 {
+    margin-bottom: 1rem;
+}
+
+.container_ensino_medio {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding: 1rem 0;
+}
+
+.container_img_ensino_fundamental {
+    display: none;
+}
+
+.container_img_diciplinas_big {
+    display: none;
+}
+
+@media screen and (min-width: 650px) {
+
+    .container_ensino_fundamental,
+    .container_ensino_medio,
+    .container_ensino_tecnico {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    .container_img_ensino_fundamental {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        aspect-ratio: 16 / 6;
+
+
+    }
+
+    .container_img_ensino_fundamental img {
+        background-position: top center;
+        object-fit: cover;
+        width: 100%;
+        margin-top: 1rem;
+        border-radius: 4px;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .diciplinas {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+    }
+
+    .container_tittle_diciplinas {
+        grid-row: 1/2;
+        grid-column: 1/13;
+    }
+
+    .container_content_diciplinas {
+        grid-row: 2/3;
+        grid-column: 1/7;
+    }
+
+    .container_ensino_fundamental {
+        grid-column: 1/8;
+        grid-row: 3/5;
+    }
+
+    .container_ensino_medio {
+        grid-column: 1/8;
+        grid-row: 6/8;
+    }
+
+    .container_ensino_tecnico {
+        grid-column: 1/8;
+        grid-row: 8/10;
+    }
+
+    .container_img_ensino_fundamental {
+        display: none;
+    }
+
+    .container_img_diciplinas_big {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        grid-column: 9/13;
+        grid-row: 1/13;
+
+        width: 100%;
+    }
+
+    .container_img_diciplinas_big img {
+        object-fit: contain;
+        width: 100%;
+        border-radius: 4px;
+    }
+}
