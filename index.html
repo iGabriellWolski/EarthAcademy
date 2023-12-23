@@ -8,17 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Swanky+and+Moo+Moo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc344887ef.js" crossorigin="anonymous"></script>
     <script defer src="javaScript/index.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <title>Gaia Academy</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="intro">
         <div class="container_logo">
             <a href="#"><img src="imagens/logo.png" alt=""></a>
             <h1>Gaia<br>Academy</h1>
         </div>
+      
+        <nav class="navegation_menu">
+            <i class="fa-solid fa-bars js-fa-bars menu-mobile"></i>
+            <ul class="lista_menu js-lista-menu">
+               <li class="item_lista_menu">
+                    <a class="link_menu" href="#institucional">Institucional</a>
+                </li>
+                <li class="item_lista_menu">
+                    <a class="link_menu" href="#estrutura">Estrutura</a>
+                </li>
+                <li class="item_lista_menu">
+                    <a class="link_menu" href="#cursos">Cursos</a>
+                </li>
+                <li class="item_lista_menu">
+                    <a class="link_menu" href="">Login</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <section class="intro">
@@ -47,7 +66,7 @@
         </div>
     </section>
 
-    <section class="institucional">
+    <section class="institucional"  id="institucional">
         <div class="left_side">
             <div class="container_tittle_institucional">
                 <h1>Institucional</h1>
@@ -88,7 +107,7 @@
         </div>
     </section>
 
-    <section class="estrutura">
+    <section class="estrutura" id="estrutura">
         <div class="container_tittle_estrutura">
             <h1>Governo Federal Brasileiro <br> Governo do Estado do Paraná</h1>
         </div>
@@ -118,11 +137,11 @@
                     <p>A estrutura das salas de aula, bibliotecas e quadras de uma escola desempenha um papel fundamental no ambiente educacional e no desenvolvimento dos alunos. Vamos destacar algumas das qualidades essenciais desses espaços:</p>
                 </div>
                 <div class="container_sumary_estrutura">
-                    <details open class="js-summary">
+                    <details open="1" class="js-summary">
                         <summary>Adequação ao Ensino</summary>
                         <p>As salas de aula bem projetadas são espaços onde o ensino e a aprendizagem ocorrem de forma eficaz. Elas oferecem um ambiente confortável e organizado, com mobiliário adequado e recursos audiovisuais que facilitam a comunicação e a compreensão.</p>
                     </details>
-                    <details  class="js-summary">
+                    <details class="js-summary">
                         <summary>Ambiente de Aprendizado</summary>
                         <p>Bibliotecas são espaços de aprendizado silencioso e reflexão. Com estantes repletas de livros, recursos digitais e mesas de estudo, elas estimulam a pesquisa, o desenvolvimento da leitura e a aquisição de conhecimento.</p>
                     </details>
@@ -138,7 +157,7 @@
                         <summary>Segurança e Conforto</summary>
                         <p>Uma estrutura escolar de qualidade oferece um ambiente seguro e confortável. Isso inclui instalações elétricas bem mantidas, sistemas de segurança eficientes e sistemas de aquecimento/refrigeração para garantir o bem-estar dos alunos e professores.</p>
                     </details>
-                    <details  class="js-summary">
+                    <details class="js-summary">
                         <summary>Espaços de Convivência</summary>
                         <p>Áreas de convivência, como pátios e cantinas, permitem interações sociais entre os alunos. Esses espaços são essenciais para o desenvolvimento das habilidades sociais e o fortalecimento do senso de comunidade na escola.</p>
                     </details>
@@ -147,7 +166,7 @@
        
     </section>
 
-    <section class="diciplinas">
+    <section class="diciplinas" id="cursos">
         <div class="container_tittle_diciplinas">
             <h1>A Jornada Educacional: <br> Do Ensino Fundamental ao Técnico</h1>
         </div>

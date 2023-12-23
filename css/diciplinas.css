@@ -12,6 +12,12 @@
     margin-bottom: 1rem;
 }
 
+.container_ensino_fundamental,
+.container_ensino_medio,
+.container_ensino_medio {
+    row-gap: 2rem;
+}
+
 .container_ensino_medio {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
